@@ -18,6 +18,7 @@ environment:
   - TEST_DIR: pkg
 
 before_build:
+  - where cp
   - cp ..\travis-tool.sh .\travis-tool.sh
   - cp travis-tool.sh.cmd %TEST_DIR%\travis-tool.sh.cmd
   - cd %TEST_DIR%
